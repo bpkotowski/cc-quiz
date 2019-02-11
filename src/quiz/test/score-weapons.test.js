@@ -1,26 +1,13 @@
 const test = QUnit.test;
-import  weaponScore from '../src/weaponScore.js'
+import weaponScore from '../src/result/calculate/calculate-result.js';
 QUnit.module('weapons score'); //header for the test
 
 let scorecard = null; // initilaize scorecard for each test
 QUnit.testStart(function() {
-    scorecard = { pirate: 0, ninja: 0, viking: 0 }
+    scorecard = { pirate: 0, ninja: 0, viking: 0 };
 });
 
-function weaponScore(weapon, scorecard) {
-    if(weapon === 'axe') {
-        scorecard.viking += 1;
-    }
 
-    if(weapon === 'cutlass') {
-        scorecard.pirate += 1;
-    }
-    if(weapon === 'shuriken') {
-        scorecard.ninja += 1;
-    }
-
-    return scorecard;
-}
 
 test('return viking axe if chosen', function(assert) { // callback function
     
