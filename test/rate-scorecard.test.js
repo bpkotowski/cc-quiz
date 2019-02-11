@@ -13,7 +13,7 @@ test('returns "Ninja" if ninja outscores other characters', function(assert) {
 });
 
 test('returns "Viking" if viking outscores other characters', function(assert) {
-    const scorecard = {pirate: 0, ninja: 0, viking: 1 };
+    const scorecard = { pirate: 0, ninja: 0, viking: 1 };
     const result = rateScorecard(scorecard);
     const expected = 'Viking';
 
@@ -21,7 +21,7 @@ test('returns "Viking" if viking outscores other characters', function(assert) {
 });
 
 test('returns "Pirate" if pirate outscores other characters', function(assert) {
-    const scorecard = {pirate: 1, ninja: 0, viking: 0 };
+    const scorecard = { pirate: 1, ninja: 0, viking: 0 };
     const result = rateScorecard(scorecard);
     const expected = 'Pirate';
 
